@@ -23,6 +23,12 @@ CREATE TABLE products (
     price NUMERIC CHECK (price > 0)
 );
 
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    birthyear YEAR NOT NULL
+);
+
 -- Create a user without a password to test passwordless auth.
 CREATE USER 'no_password'@'%';
 
