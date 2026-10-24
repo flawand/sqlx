@@ -23,9 +23,8 @@ CREATE TABLE products (
     price NUMERIC CHECK (price > 0)
 );
 
-CREATE TABLE users (
+CREATE TABLE test_query_as_year_inference (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    name TEXT NOT NULL,
     birthyear YEAR NOT NULL
 );
 
